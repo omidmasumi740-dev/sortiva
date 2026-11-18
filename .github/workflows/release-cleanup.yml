@@ -1,0 +1,36 @@
+name: Release hygiene
+
+# Keeps GitHub Releases "latest-only" so the in-app updater always sees the
+# newest version: marks the just-published release as latest and deletes all
+# older releases together with their tags.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keep-latest:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Mark this release as latest
+        if: github.event_name == 'release'
+        run: gh release edit "${{ github.event.release.tag_name }}" --repo "$GITHUB_REPOSITORY" --latest
+
+      - name: Delete older releases and tags
+        run: |
+          gh release list --repo "$GITHUB_REPOSITORY" --limit 100 --json tagName,createdAt \
+            | jq -r 'sort_by(.createdAt) | reverse | .[1:] | .[].tagName' \
+            | while read -r tag; do
+                if [ -n "$tag" ]; then
+                  gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
+                fi
+              done
+
+      - name: Verify latest release
+        run: gh api "repos/$GITHUB_REPOSITORY/releases/latest" --jq '.tag_name'
