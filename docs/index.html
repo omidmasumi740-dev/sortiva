@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2f80ed">
+  <title>Sortiva — فایل‌هایت را مرتب کن</title>
+  <meta name="description" content="Sortiva فایل‌های ویندوز را بر اساس نوع و تاریخ مرتب می‌کند، تاریخ واقعی عکس و ویدیو را می‌خواند، تکراری‌ها را پیدا می‌کند و می‌تواند خودکار و زمان‌بندی‌شده اجرا شود.">
+  <link rel="canonical" href="https://omidmasumi740-dev.github.io/sortiva/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sortiva">
+  <meta property="og:title" content="Sortiva — فایل‌هایت را مرتب کن">
+  <meta property="og:description" content="مرتب‌سازی فایل‌ها بر اساس نوع و تاریخ، تاریخ واقعی عکس‌ها، حذف تکراری‌ها و اجرای زمان‌بندی‌شده برای ویندوز.">
+  <meta property="og:url" content="https://omidmasumi740-dev.github.io/sortiva/">
+  <meta property="og:image" content="https://omidmasumi740-dev.github.io/sortiva/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fa_IR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sortiva — فایل‌هایت را مرتب کن">
+  <meta name="twitter:description" content="مرتب‌سازی فایل‌ها بر اساس نوع و تاریخ، تاریخ واقعی عکس‌ها و اجرای زمان‌بندی‌شده.">
+  <meta name="twitter:image" content="https://omidmasumi740-dev.github.io/sortiva/assets/img/og.png">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/fonts/vazirmatn-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/vazirmatn-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem('sortiva-lang');
+        if (l !== 'en') l = 'fa';
+        document.documentElement.lang = l;
+        document.documentElement.dir = l === 'fa' ? 'rtl' : 'ltr';
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sortiva",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "softwareVersion": "4.11.2",
+    "inLanguage": ["fa", "en"],
+    "description": "Windows file organizer that sorts by type and date, reads real photo dates, finds duplicates and can run on a schedule.",
+    "url": "https://omidmasumi740-dev.github.io/sortiva/",
+    "downloadUrl": "https://github.com/omidmasumi740-dev/sortiva/releases/latest",
+    "image": "https://omidmasumi740-dev.github.io/sortiva/assets/img/og.png",
+    "license": "https://github.com/omidmasumi740-dev/sortiva/blob/main/LICENSE",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Omid Masomi" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">پرش به محتوا</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Sortiva">
+        <img src="assets/img/icon-64.png" width="34" height="34" alt="">
+        <span class="brand-name">Sortiva</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features" data-i18n="navFeatures">قابلیت‌ها</a>
+        <a href="#plans" data-i18n="navPlans">رایگان و Pro</a>
+        <a href="#how" data-i18n="navHow">چطور کار می‌کند</a>
+        <a href="#download" data-i18n="navDownload">دانلود</a>
+        <a href="#faq" data-i18n="navFaq">سوالات</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+          <span class="lang-when-fa">EN</span>
+          <span class="lang-when-en">FA</span>
+        </button>
+        <a class="btn btn-ghost btn-sm nav-github" href="https://github.com/omidmasumi740-dev/sortiva" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/omidmasumi740-dev/sortiva/releases/download/v4.11.2/Sortiva_Setup_V4.11.2.exe" data-download="sortiva" data-dl-primary>
+          <span data-i18n="downloadShort">دانلود</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span><span data-i18n="heroBadgePrefix">نسخهٔ</span> <span data-version>4.11.2</span> <span data-i18n="heroBadgeSuffix">منتشر شد</span></span>
+          </div>
+          <h1 data-i18n-html="heroTitle">فایل‌هایت را مرتب کن. <span class="grad">بی‌نظمی را فراموش کن.</span></h1>
+          <p class="lede" data-i18n="heroLede">Sortiva پوشه‌های ویندوز را بر اساس نوع و تاریخ مرتب می‌کند، تاریخ واقعی عکس و ویدیو را از خود فایل می‌خواند، تکراری‌ها را پیدا می‌کند و می‌تواند طبق برنامه اجرا شود.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="https://github.com/omidmasumi740-dev/sortiva/releases/download/v4.11.2/Sortiva_Setup_V4.11.2.exe" data-download="sortiva" data-dl-primary>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+              <span data-i18n="heroCta">دانلود نسخهٔ ویندوز</span>
+            </a>
+            <a class="btn btn-secondary btn-lg" href="#features" data-i18n="heroSecondary">دیدن قابلیت‌ها</a>
+          </div>
+          <p class="hero-note">
+            <span data-i18n="heroNote">نسخهٔ</span>
+            <span data-version>4.11.2</span>
+            <span aria-hidden="true">·</span>
+            <span data-size>17.3 MB</span>
+            <span aria-hidden="true">·</span>
+            <span>Windows 10/11 x64</span>
+          </p>
+          <ul class="hero-points">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span data-i18n="heroPoint1">پلن رایگان بدون انقضا، بدون کارت بانکی</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span data-i18n="heroPoint2">پیش‌نمایش و هشدار قبل از جابه‌جایی فایل‌ها</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span data-i18n="heroPoint3">تاریخچهٔ کامل با بازگردانی و پوشهٔ شمسی</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="app-card">
+            <div class="app-top">
+              <div class="app-title">
+                <img src="assets/img/icon-64.png" width="28" height="28" alt="">
+                <span>Sortiva</span>
+                <span class="app-tag" data-i18n="appTag">مرتب‌سازی خودکار</span>
+              </div>
+              <span class="app-status"><i aria-hidden="true"></i><span data-i18n="appReady">آماده</span></span>
+            </div>
+            <div class="app-path">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg>
+              <span>C:\Users\Omid\Downloads</span>
+              <span class="app-path-label" data-i18n="appPath">پوشهٔ دانلود</span>
+            </div>
+            <div class="folder-grid">
+              <div class="folder-tile">
+                <img src="assets/img/type-images.png" width="52" height="52" alt="">
+                <span class="tile-copy"><b data-i18n="tileImages">تصاویر</b><small>JPG · PNG · HEIC</small></span>
+              </div>
+              <div class="folder-tile">
+                <img src="assets/img/type-documents.png" width="52" height="52" alt="">
+                <span class="tile-copy"><b data-i18n="tileDocs">اسناد</b><small>PDF · DOCX · XLSX</small></span>
+              </div>
+              <div class="folder-tile">
+                <img src="assets/img/type-videos.png" width="52" height="52" alt="">
+                <span class="tile-copy"><b data-i18n="tileVideos">ویدیو</b><small>MP4 · MKV · MOV</small></span>
+              </div>
+              <div class="folder-tile">
+                <img src="assets/img/type-archives.png" width="52" height="52" alt="">
+                <span class="tile-copy"><b data-i18n="tileArchives">آرشیو</b><small>ZIP · RAR · 7Z</small></span>
+              </div>
+              <div class="folder-tile folder-tile-wide">
+                <img src="assets/img/type-more.png" width="52" height="52" alt="">
+                <span class="tile-copy"><b data-i18n="tileMore">و بقیه</b><small>MP3 · EXE · ISO</small></span>
+              </div>
+            </div>
+            <div class="app-result">
+              <span class="result-check">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              </span>
+              <span data-i18n="appResult">مرتب‌سازی با موفقیت انجام شد</span>
+              <span class="undo" data-i18n="appUndo">بازگردانی</span>
+            </div>
+          </div>
+          <img class="folder-fly" src="assets/img/hero-folder.png" width="96" height="99" alt="">
+        </div>
+      </div>
+
+      <div class="container trust-row">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M7 8l5-5 5 5M7 16l5 5 5-5"/></svg>
+          <span data-i18n="trust1">جابه‌جایی امن با پیش‌نمایش</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+          <span data-i18n="trust2">شمسی و میلادی</span>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+          <span data-i18n="trust3">فارسی RTL و English</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="featuresKicker">یک مرتب‌کنندهٔ کامل</p>
+          <h2 data-i18n="featuresTitle">هر چیزی سر جای خودش</h2>
+          <p class="section-sub" data-i18n="featuresSub">از دانلودهای آشفته و عکس‌های بدون نام تا فایل‌های پراکنده در چند درایو؛ Sortiva قبل از هر جابه‌جایی نشان می‌دهد چه اتفاقی می‌افتد.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="M8 13h8M8 16h5"/></svg>
+            </span>
+            <h3 data-i18n="f1t">مرتب‌سازی نوع و تاریخ</h3>
+            <p data-i18n="f1d">صفحه‌های Simple، Images، Videos، Documents، Archives، Music و Software با همهٔ حالت‌های گروه‌بندی.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>
+            </span>
+            <h3 data-i18n="f2t">تاریخ واقعی عکس و ویدیو</h3>
+            <p data-i18n="f2d">خواندن EXIF و تاریخ فیلم‌برداری؛ گروه‌بندی فیلم و سریال، تاریخ عکس یا موقعیت GPS و Artist/Album.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <h3 data-i18n="f3t">پیش‌نمایش و هشدار تداخل</h3>
+            <p data-i18n="f3d">قبل از جابه‌جایی ببین چه فایلی کجا می‌رود؛ هشدار تداخل قانون، برخورد مقصد و فایل موجود.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <h3 data-i18n="f4t">خودکار و زمان‌بندی‌شده</h3>
+            <p data-i18n="f4d">Auto Organize وقتی اپ باز است و Run Now؛ در Pro اجرای روزانه با Task Scheduler حتی وقتی برنامه بسته است.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 8v4l3 2"/></svg>
+            </span>
+            <h3 data-i18n="f5t">تاریخچه و بازگردانی</h3>
+            <p data-i18n="f5d">هر جابه‌جایی ثبت می‌شود و با یک کلیک برمی‌گردد. خروجی CSV و JSON با حساب رایگان.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.7 0 2.5-1 2.5-2.2 0-1.3-1-1.8-1-3 0-1.1.9-2 2.1-2H18a3 3 0 0 0 3-3c0-4.4-4-7.8-9-7.8Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg>
+            </span>
+            <h3 data-i18n="f6t">ظاهر و زبان دلخواه</h3>
+            <p data-i18n="f6d">تم روشن، تیره یا سیستم، ۸ رنگ، مقیاس رابط، فارسی راست‌چین و English؛ مسیرهای طولانی و بین‌درایوی.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="before-after">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="baKicker">قبل و بعد</p>
+          <h2 data-i18n="baTitle">از یک پوشهٔ شلوغ، به یک ساختار روشن</h2>
+          <p class="section-sub" data-i18n="baSub">نمونهٔ نمایشی از اینکه Sortiva فایل‌های پراکنده را چطور دسته‌بندی می‌کند. قبل از اجرا، مقصد هر فایل را می‌بینید.</p>
+        </div>
+        <div class="ba-grid">
+          <div class="ba-card">
+            <div class="ba-head">
+              <span class="ba-badge ba-badge-bad" data-i18n="baBefore">قبل</span>
+              <span data-i18n="baBeforeSub">همه‌چیز در یک پوشه</span>
+            </div>
+            <ul class="file-list">
+              <li><span class="file-dot dot-img"></span><span>IMG_2041.jpg</span><small>4.2 MB</small></li>
+              <li><span class="file-dot dot-doc"></span><span>invoice-final-2.pdf</span><small>318 KB</small></li>
+              <li><span class="file-dot dot-vid"></span><span>clip.MOV</span><small>82 MB</small></li>
+              <li><span class="file-dot dot-zip"></span><span>backup.zip</span><small>1.4 GB</small></li>
+              <li><span class="file-dot dot-img"></span><span>photo (1).png</span><small>2.7 MB</small></li>
+              <li><span class="file-dot dot-aud"></span><span>track.mp3</span><small>8.1 MB</small></li>
+            </ul>
+          </div>
+          <div class="ba-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <div class="ba-card ba-card-good">
+            <div class="ba-head">
+              <span class="ba-badge ba-badge-good" data-i18n="baAfter">بعد</span>
+              <span data-i18n="baAfterSub">پوشه‌های قابل پیش‌بینی</span>
+            </div>
+            <ul class="folder-list">
+              <li>
+                <img src="assets/img/type-images.png" width="30" height="30" alt="">
+                <span><b data-i18n="folderImages">تصاویر</b><small>2026 / 05</small></span>
+                <span class="folder-count">3</span>
+              </li>
+              <li>
+                <img src="assets/img/type-documents.png" width="30" height="30" alt="">
+                <span><b data-i18n="folderDocs">اسناد</b><small>فاکتورها</small></span>
+                <span class="folder-count">1</span>
+              </li>
+              <li>
+                <img src="assets/img/type-videos.png" width="30" height="30" alt="">
+                <span><b data-i18n="folderVideos">ویدیو</b><small>2026 / 05</small></span>
+                <span class="folder-count">1</span>
+              </li>
+              <li>
+                <img src="assets/img/type-archives.png" width="30" height="30" alt="">
+                <span><b data-i18n="folderArchives">آرشیو</b><small>backup</small></span>
+                <span class="folder-count">1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="plansKicker">شفاف، بدون قید پنهان</p>
+          <h2 data-i18n="plansTitle">رایگان برای همیشه، Pro برای کارهای بیشتر</h2>
+          <p class="section-sub" data-i18n="plansSub">مرتب‌سازی روزمره در پلن رایگان می‌ماند. قابلیت‌های حرفه‌ای را ۳۰ روز بدون کارت بانکی امتحان می‌کنید.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-head">
+              <h3 data-i18n="freeTitle">Free</h3>
+              <span class="plan-badge" data-i18n="freeBadge">همیشگی · ۰ تومان</span>
+            </div>
+            <p class="plan-sub" data-i18n="freeSub">یک مرتب‌کنندهٔ کامل برای استفادهٔ روزانه.</p>
+            <ul class="check-list">
+              <li data-i18n="free1">مرتب‌سازی نوع و تاریخ با همهٔ حالت‌های گروه‌بندی</li>
+              <li data-i18n="free2">پوشهٔ شمسی و میلادی، تاریخ واقعی EXIF و ویدیو</li>
+              <li data-i18n="free3">جابه‌جایی بین درایوها با پیشرفت و Cancel، مسیرهای طولانی</li>
+              <li data-i18n="free4">پیش‌نمایش و هشدار تداخل قبل از جابه‌جایی</li>
+              <li data-i18n="free5">Auto Organize تا وقتی اپ باز است + Run Now</li>
+              <li data-i18n="free6">تاریخچهٔ کامل با Undo</li>
+              <li data-i18n="free7">خروجی CSV/JSON با حساب رایگان</li>
+              <li data-i18n="free8">تم روشن/تیره/سیستم، ۸ رنگ، فارسی و English</li>
+            </ul>
+            <a class="btn btn-secondary plan-btn" href="#download" data-i18n="freeCta">شروع رایگان</a>
+          </article>
+          <article class="plan-card plan-pro">
+            <div class="plan-head">
+              <h3 data-i18n="proTitle">Pro</h3>
+              <span class="plan-badge plan-badge-pro" data-i18n="proBadge">۳۰ روز رایگان</span>
+            </div>
+            <p class="plan-sub" data-i18n="proSub">همهٔ امکانات Free، به‌علاوهٔ ابزارهای خودکارسازی و پاک‌سازی.</p>
+            <ul class="check-list">
+              <li data-i18n="pro1">قوانین هوشمند و پریست‌های آماده</li>
+              <li data-i18n="pro2">پیدا کردن فایل‌های تکراری</li>
+              <li data-i18n="pro3">اجرای روزانه با Windows Task Scheduler، حتی وقتی اپ بسته است</li>
+              <li data-i18n="pro4">Folder Watch برای پوشه‌های فعال</li>
+              <li data-i18n="pro5">رنگ تاکیدی سفارشی</li>
+              <li data-i18n="pro6">پاک‌سازی نصب‌کننده‌ها و Temp با Recycle Bin</li>
+              <li data-i18n="pro7">ساختارهای پیشرفتهٔ Auto Organize</li>
+            </ul>
+            <a class="btn btn-primary plan-btn" href="#download" data-i18n="proCta">شروع دورهٔ آزمایشی</a>
+            <p class="plan-note" data-i18n="planNote">برای فعال‌سازی دورهٔ آزمایشی و خروجی، یک حساب رایگان با ایمیل یا GitHub بسازید. کارت بانکی لازم نیست.</p>
+          </article>
+        </div>
+        <p class="plans-foot" data-i18n="plansFoot">پس از پایان دورهٔ Pro، اپ متوقف نمی‌شود؛ روی پلن Free ادامه می‌دهد. هر دورهٔ آزمایشی یک‌بار برای هر حساب، ایمیل، هویت GitHub و دستگاه داده می‌شود.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" data-i18n="howKicker">سه قدم ساده</p>
+          <h2 data-i18n="howTitle">از نصب تا پوشهٔ مرتب</h2>
+          <p class="section-sub" data-i18n="howSub">هیچ فایلی بدون دیدن پیش‌نمایش جابه‌جا نمی‌شود.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3 data-i18n="step1t">نصب کن</h3>
+            <p data-i18n="step1d">فایل Setup را اجرا کنید. تنظیمات، تاریخچه و لایسنس نسخهٔ قبلی حفظ می‌شود.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3 data-i18n="step2t">پوشه را انتخاب کن</h3>
+            <p data-i18n="step2d">ساختار دلخواه را ببین، هشدارها را بررسی کن و مقصد هر فایل را قبل از تأیید بدان.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3 data-i18n="step3t">مرتب کن</h3>
+            <p data-i18n="step3d">یک‌بار اجرا کن یا خودکار بساز؛ اگر پشیمان شدی، با Undo همه‌چیز برمی‌گردد.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="container">
+        <div class="download-card">
+          <div class="download-copy">
+            <p class="kicker" data-i18n="downloadKicker">نصب روی ویندوز</p>
+            <h2 data-i18n="downloadTitle">Sortiva را نصب کنید</h2>
+            <p data-i18n="downloadSub">نصب‌کننده نسخهٔ قبلی را در جای خود ارتقا می‌دهد. بعد از نصب، اگر بخواهید از قابلیت‌های Pro استفاده کنید، حساب رایگان بسازید و دورهٔ ۳۰ روزه را شروع کنید.</p>
+            <div class="download-actions">
+              <a class="btn btn-primary btn-lg" href="https://github.com/omidmasumi740-dev/sortiva/releases/download/v4.11.2/Sortiva_Setup_V4.11.2.exe" data-download="sortiva" data-dl-primary>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+                <span data-i18n="downloadSetup">دانلود Setup</span>
+                <span class="btn-version" data-version>4.11.2</span>
+              </a>
+              <a class="btn btn-secondary btn-lg" href="https://github.com/omidmasumi740-dev/sortiva/releases/latest" target="_blank" rel="noopener noreferrer" data-i18n="downloadReleases">صفحهٔ انتشارها</a>
+            </div>
+            <div class="download-alt">
+              <a href="https://github.com/omidmasumi740-dev/sortiva/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5"/></svg>
+                <span data-i18n="downloadReadme">راهنمای کامل و پلن رایگان</span>
+              </a>
+            </div>
+            <p class="account-note" data-i18n="accountNote">مرتب‌سازی رایگان است. حساب رایگان فقط برای خروجی CSV/JSON و فعال‌سازی ۳۰ روز Pro لازم می‌شود.</p>
+          </div>
+          <aside class="download-side">
+            <div class="req-block">
+              <h3 data-i18n="reqTitle">نیازمندی‌ها</h3>
+              <ul>
+                <li><span data-i18n="reqWin">ویندوز</span><span>10 / 11 · x64</span></li>
+                <li><span data-i18n="reqSize">حجم نصب‌کننده</span><span data-size>17.3 MB</span></li>
+                <li><span data-i18n="reqLicense">مجوز</span><span>MIT</span></li>
+                <li><span data-i18n="reqVersion">نسخه</span><span data-version>4.11.2</span></li>
+              </ul>
+            </div>
+            <details class="sha">
+              <summary data-i18n="shaTitle">SHA-256 نصب‌کننده</summary>
+              <code class="sha-code">26c9626c067ac7530c8cff887d5e88b8e16fcf29c8b0d30a1bd5d6f3932d4b67</code>
+            </details>
+            <p class="side-note" data-i18n="downloadNote">Sortiva روی خود ویندوز اجرا می‌شود؛ فایل‌ها از دستگاه شما بیرون نمی‌روند.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="kicker" data-i18n="faqKicker">پرسش‌های رایج</p>
+          <h2 data-i18n="faqTitle">قبل از مرتب‌کردن بدانید</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary data-i18n="q1">آیا Sortiva رایگان است؟</summary>
+            <p data-i18n="a1">بله. پلن Free هیچ انقضایی ندارد و مرتب‌سازی نوع و تاریخ، پیش‌نمایش، Auto Organize و تاریخچه با Undo را شامل می‌شود. قابلیت‌های Pro را ۳۰ روز رایگان امتحان می‌کنید و بعد از آن اپ روی Free ادامه می‌دهد.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q2">برای حساب کاربری باید پول بدهم؟</summary>
+            <p data-i18n="a2">نه. حساب رایگان با ایمیل یا GitHub ساخته می‌شود و کارت بانکی نمی‌خواهد. این حساب برای خروجی CSV/JSON و شروع دورهٔ آزمایشی Pro است؛ خودِ مرتب‌سازی رایگان است.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q3">چه فایل‌هایی را مرتب می‌کند؟</summary>
+            <p data-i18n="a3">تصاویر، ویدیو، اسناد، آرشیو، موسیقی و نرم‌افزار. عکس و ویدیو با تاریخ واقعی EXIF یا فیلم‌برداری گروه‌بندی می‌شوند و می‌توانید پوشهٔ شمسی یا میلادی بسازید.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q4">آیا فایل‌ها حذف یا خراب می‌شوند؟</summary>
+            <p data-i18n="a4">مرتب‌سازی جابه‌جایی است، نه حذف. قبل از اجرا پیش‌نمایش و هشدار برخورد مقصد را می‌بینید و همهٔ جابه‌جایی‌ها با Undo برمی‌گردند. پاک‌سازی نصب‌کننده و Temp در Pro از Recycle Bin استفاده می‌کند.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q5">برنامه باید همیشه باز باشد؟</summary>
+            <p data-i18n="a5">در پلن Free، Auto Organize تا وقتی اپ باز است کار می‌کند. در Pro می‌توانید اجرای روزانه را به Windows Task Scheduler بسپارید تا حتی وقتی برنامه بسته است انجام شود.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q6">تقویم شمسی پشتیبانی می‌شود؟</summary>
+            <p data-i18n="a6">بله. پوشه‌ها را می‌توانید بر اساس تاریخ شمسی یا میلادی بسازید و رابط فارسی به‌صورت کامل راست‌چین است.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cross-promo">
+      <div class="container">
+        <div class="cross-card">
+          <img src="assets/img/icon-sazora.png" width="64" height="64" alt="SAZORA">
+          <div>
+            <p class="kicker" data-i18n="crossKicker">از همین سازنده</p>
+            <h2 data-i18n="crossTitle">SAZORA — کار، پروژه، مالی و اهداف</h2>
+            <p data-i18n="crossSub">یک دستیار آفلاین ویندوز برای کارهای روزانه، پروژه‌های ساختمانی، کارگران، مالی، اهداف و کتاب‌خوانی.</p>
+          </div>
+          <a class="btn btn-light" href="https://omidmasumi740-dev.github.io/sazora/" data-i18n="crossCta">دیدن سایت SAZORA</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#top">
+          <img src="assets/img/icon-64.png" width="30" height="30" alt="">
+          <span class="brand-name">Sortiva</span>
+        </a>
+        <p data-i18n="footerTag">فایل‌هایت را مرتب کن. بی‌نظمی را فراموش کن.</p>
+        <p class="footer-note" data-i18n="footerNote">ساخته‌شده برای ویندوز ۱۰ و ۱۱ · مجوز MIT</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footerLinks">لینک‌ها</h3>
+        <a href="https://github.com/omidmasumi740-dev/sortiva" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/omidmasumi740-dev/sortiva/releases/latest" target="_blank" rel="noopener noreferrer" data-i18n="footerReleases">انتشارها</a>
+        <a href="https://github.com/omidmasumi740-dev/sortiva/blob/main/README.md" target="_blank" rel="noopener noreferrer" data-i18n="footerNotes">راهنما و پلن‌ها</a>
+        <a href="https://omidmasumi740-dev.github.io/sazora/" data-i18n="footerSazora">SAZORA</a>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footerSupport">حمایت</h3>
+        <a href="https://omidmasumi740-dev.github.io/donate-page/" target="_blank" rel="noopener noreferrer" data-i18n="footerDonate">صفحهٔ دونیت</a>
+        <a href="https://github.com/omidmasumi740-dev" target="_blank" rel="noopener noreferrer" data-i18n="footerAuthor">سایر پروژه‌ها</a>
+        <a href="https://github.com/omidmasumi740-dev/sortiva/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" data-i18n="footerLicense">مجوز MIT</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Sortiva · <span data-i18n="footerRights">همهٔ حقوق محفوظ است</span></p>
+      <p class="footer-made" data-i18n="footerMade">ساختهٔ Omid Masomi</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

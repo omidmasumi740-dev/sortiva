@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://omidmasumi740-dev.github.io/sortiva/sitemap.xml
