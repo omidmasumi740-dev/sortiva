@@ -27,16 +27,7 @@
   <link rel="preload" href="assets/fonts/vazirmatn-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/vazirmatn-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    (function () {
-      try {
-        var l = localStorage.getItem('sortiva-lang');
-        if (l !== 'en') l = 'fa';
-        document.documentElement.lang = l;
-        document.documentElement.dir = l === 'fa' ? 'rtl' : 'ltr';
-      } catch (e) {}
-    })();
-  </script>
+  <script src="lang-init.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -489,7 +480,7 @@
             </div>
             <details class="sha">
               <summary data-i18n="shaTitle">SHA-256 نصب‌کننده</summary>
-              <code class="sha-code">4694d18d5f9eb218cc1dd782fbd2a9ddaf9831793d0298dde4a7faaa8747152d</code>
+              <code class="sha-code" data-sha>4694d18d5f9eb218cc1dd782fbd2a9ddaf9831793d0298dde4a7faaa8747152d</code>
             </details>
             <p class="side-note" data-i18n="downloadNote">Sortiva روی خود ویندوز اجرا می‌شود؛ فایل‌ها از دستگاه شما بیرون نمی‌روند.</p>
           </aside>
@@ -578,6 +569,7 @@
     </div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

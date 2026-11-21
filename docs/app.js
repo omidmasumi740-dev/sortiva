@@ -373,15 +373,13 @@
     }
   };
 
+  var CFG = window.SITE_CONFIG || {};
+  var REPO_URL = 'https://github.com/omidmasumi740-dev/sortiva';
   var state = {
     lang: 'fa',
-    version: '4.11.3',
-    size: 18131306
+    version: CFG.VERSION || '4.11.3',
+    size: Number(CFG.FILE_SIZE) || 18131306
   };
-
-  var API_URL = 'https://api.github.com/repos/omidmasumi740-dev/sortiva/releases/latest';
-  var CACHE_KEY = 'sortiva-release-v1';
-  var CACHE_TTL = 6 * 60 * 60 * 1000;
 
   function toFa(value) {
     return String(value).replace(/[0-9]/g, function (d) {
@@ -406,6 +404,21 @@
     });
     document.querySelectorAll('[data-size]').forEach(function (el) {
       el.textContent = formatSize(state.size);
+    });
+  }
+
+  function downloadUrl() {
+    if (CFG.DOWNLOAD_URL) return CFG.DOWNLOAD_URL;
+    return REPO_URL + '/releases/download/v' + state.version + '/Sortiva_Setup_V' + state.version + '.exe';
+  }
+
+  function renderRelease() {
+    renderNumbers();
+    document.querySelectorAll('[data-download="sortiva"]').forEach(function (el) {
+      el.setAttribute('href', downloadUrl());
+    });
+    document.querySelectorAll('[data-sha]').forEach(function (el) {
+      el.textContent = CFG.SHA256 || '';
     });
   }
 
@@ -456,76 +469,7 @@
       localStorage.setItem('sortiva-lang', state.lang);
     } catch (e) {}
 
-    renderNumbers();
-  }
-
-  function applyRelease(release) {
-    if (!release || !release.tag_name) return;
-    var version = String(release.tag_name).replace(/^v/i, '');
-    var setup = null;
-    (release.assets || []).forEach(function (asset) {
-      if (!setup && /\.exe$/i.test(asset.name) && /setup/i.test(asset.name)) setup = asset;
-    });
-    if (!setup) {
-      (release.assets || []).forEach(function (asset) {
-        if (!setup && /\.exe$/i.test(asset.name)) setup = asset;
-      });
-    }
-    state.version = version;
-    if (setup) {
-      state.size = setup.size;
-      document.querySelectorAll('[data-download="sortiva"]').forEach(function (el) {
-        el.href = setup.browser_download_url;
-      });
-    }
-    renderNumbers();
-  }
-
-  function fromCache() {
-    try {
-      var raw = localStorage.getItem(CACHE_KEY);
-      if (!raw) return null;
-      var cached = JSON.parse(raw);
-      if (!cached || !cached.at || Date.now() - cached.at > CACHE_TTL) return null;
-      return cached.release;
-    } catch (e) {
-      return null;
-    }
-  }
-
-  function saveCache(release) {
-    try {
-      localStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), release: release }));
-    } catch (e) {}
-  }
-
-  function loadLatestRelease() {
-    var cached = fromCache();
-    if (cached) {
-      applyRelease(cached);
-      return;
-    }
-    if (typeof fetch !== 'function') return;
-
-    var controller = typeof AbortController === 'function' ? new AbortController() : null;
-    var timer = controller ? setTimeout(function () { controller.abort(); }, 5000) : null;
-
-    fetch(API_URL, {
-      headers: { Accept: 'application/vnd.github+json' },
-      signal: controller ? controller.signal : undefined
-    })
-      .then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.json();
-      })
-      .then(function (release) {
-        applyRelease(release);
-        saveCache(release);
-      })
-      .catch(function () {})
-      .then(function () {
-        if (timer) clearTimeout(timer);
-      });
+    renderRelease();
   }
 
   function initHeader() {
@@ -558,8 +502,6 @@
 
     var year = document.getElementById('year');
     if (year) year.textContent = String(new Date().getFullYear());
-
-    setTimeout(loadLatestRelease, 900);
   }
 
   if (document.readyState === 'loading') {
