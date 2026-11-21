@@ -296,8 +296,8 @@
 
   var state = {
     lang: 'fa',
-    version: '4.11.2',
-    size: 18129188
+    version: '4.11.3',
+    size: 18131306
   };
 
   var API_URL = 'https://api.github.com/repos/omidmasumi740-dev/sortiva/releases/latest';
