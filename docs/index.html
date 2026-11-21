@@ -6,7 +6,12 @@
   <meta name="theme-color" content="#2f80ed">
   <title>Sortiva — فایل‌هایت را مرتب کن</title>
   <meta name="description" content="Sortiva فایل‌های ویندوز را بر اساس نوع و تاریخ مرتب می‌کند، تاریخ واقعی عکس و ویدیو را می‌خواند، تکراری‌ها را با SHA-256 پیدا می‌کند، نصب‌کننده‌های قدیمی را پاک می‌کند و با Task Scheduler خودکار اجرا می‌شود.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://*.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://omidmasumi740-dev.github.io/sortiva/">
+  <link rel="alternate" hreflang="fa" href="https://omidmasumi740-dev.github.io/sortiva/?lang=fa">
+  <link rel="alternate" hreflang="en" href="https://omidmasumi740-dev.github.io/sortiva/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://omidmasumi740-dev.github.io/sortiva/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sortiva">
   <meta property="og:title" content="Sortiva — فایل‌هایت را مرتب کن">
@@ -42,7 +47,10 @@
     "downloadUrl": "https://github.com/omidmasumi740-dev/sortiva/releases/latest",
     "image": "https://omidmasumi740-dev.github.io/sortiva/assets/img/og.png",
     "license": "https://github.com/omidmasumi740-dev/sortiva/blob/main/LICENSE",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "offers": [
+      { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Pro", "price": "2.99", "priceCurrency": "USD", "description": "Monthly subscription after a free 30-day trial" }
+    ],
     "author": { "@type": "Person", "name": "Omid Masomi" }
   }
   </script>
@@ -85,7 +93,7 @@
             <span class="pulse-dot" aria-hidden="true"></span>
             <span><span data-i18n="heroBadgePrefix">نسخهٔ</span> <span data-version>4.11.3</span> <span data-i18n="heroBadgeSuffix">منتشر شد</span></span>
           </div>
-          <h1 data-i18n-html="heroTitle">فایل‌هایت را مرتب کن. <span class="grad">بی‌نظمی را فراموش کن.</span></h1>
+          <h1><span data-i18n="heroTitleA">فایل‌هایت را مرتب کن.</span> <span class="grad" data-i18n="heroTitleB">بی‌نظمی را فراموش کن.</span></h1>
           <p class="lede" data-i18n="heroLede">Sortiva پوشه‌های ویندوز را بر اساس نوع و تاریخ مرتب می‌کند، تاریخ واقعی عکس و ویدیو را از خود فایل می‌خواند، قبل از هر جابه‌جایی پیش‌نمایش و هشدار می‌دهد و می‌تواند طبق برنامه و حتی با برنامهٔ بسته اجرا شود.</p>
           <div class="cta-row">
             <a class="btn btn-primary btn-lg" href="https://github.com/omidmasumi740-dev/sortiva/releases/download/v4.11.3/Sortiva_Setup_V4.11.3.exe" data-download="sortiva" data-dl-primary>
@@ -94,6 +102,13 @@
             </a>
             <a class="btn btn-secondary btn-lg" href="#features" data-i18n="heroSecondary">دیدن قابلیت‌ها</a>
           </div>
+          <p class="price-line">
+            <span data-i18n="heroPricePrefix">نسخهٔ رایگان همیشگی · ۳۰ روز Pro رایگان · سپس</span>
+            <b class="price-amount" dir="ltr" data-pro-price>$2.99</b>
+            <span class="price-suffix" data-i18n="heroPriceSuffix">در ماه</span>
+            <span class="price-sep" aria-hidden="true">·</span>
+            <a class="price-link" href="#plans" data-i18n="heroPriceLink">جزئیات پلن‌ها</a>
+          </p>
           <p class="hero-note">
             <span data-i18n="heroNote">نسخهٔ</span>
             <span data-version>4.11.3</span>
@@ -372,7 +387,7 @@
     <section class="section section-soft" id="plans">
       <div class="container">
         <div class="section-head">
-          <p class="kicker" data-i18n="plansKicker">شفاف، بدون قید پنهان</p>
+          <p class="kicker" data-i18n="plansKicker">قیمت شفاف</p>
           <h2 data-i18n="plansTitle">رایگان برای همیشه، Pro برای کارهای بیشتر</h2>
           <p class="section-sub" data-i18n="plansSub">مرتب‌سازی روزمره در پلن رایگان می‌ماند. قابلیت‌های حرفه‌ای را ۳۰ روز بدون کارت بانکی امتحان می‌کنید.</p>
         </div>
@@ -401,6 +416,7 @@
               <span class="plan-badge plan-badge-pro" data-i18n="proBadge">۳۰ روز رایگان</span>
             </div>
             <p class="plan-sub" data-i18n="proSub">همهٔ امکانات Free، به‌علاوهٔ ابزارهای خودکارسازی و پاک‌سازی.</p>
+            <p class="plan-price"><b dir="ltr" data-pro-price>$2.99</b> <span class="price-suffix" data-i18n="proPriceSuffix">در ماه، بعد از ۳۰ روز رایگان</span></p>
             <ul class="check-list">
               <li data-i18n="pro1">قوانین هوشمند و پریست‌های آماده</li>
               <li data-i18n="pro2">پیدا کردن فایل‌های تکراری</li>
@@ -410,9 +426,27 @@
               <li data-i18n="pro6">پاک‌سازی نصب‌کننده‌ها و Temp با Recycle Bin</li>
               <li data-i18n="pro7">ساختارهای پیشرفتهٔ Auto Organize</li>
             </ul>
-            <a class="btn btn-primary plan-btn" href="#download" data-i18n="proCta">شروع دورهٔ آزمایشی</a>
+            <a class="btn btn-primary plan-btn" href="#trial" data-i18n="proCta">شروع دورهٔ آزمایشی</a>
             <p class="plan-note" data-i18n="planNote">برای فعال‌سازی دورهٔ آزمایشی و خروجی، یک حساب رایگان با ایمیل یا GitHub بسازید. کارت بانکی لازم نیست.</p>
           </article>
+        </div>
+        <div class="trial-how" id="trial">
+          <h3 data-i18n="trialTitle">دورهٔ آزمایشی چطور کار می‌کند؟</h3>
+          <ol class="trial-steps">
+            <li>
+              <span class="step-num" data-i18n="trialN1">۱</span>
+              <div><b data-i18n="trialS1t">نصب کنید</b><p data-i18n="trialS1d">فایل Setup را اجرا کنید. پلن رایگان بدون حساب و بدون انقضا از همان لحظه کار می‌کند.</p></div>
+            </li>
+            <li>
+              <span class="step-num" data-i18n="trialN2">۲</span>
+              <div><b data-i18n="trialS2t">حساب رایگان بسازید</b><p data-i18n="trialS2d">در اپ «Pro &amp; account» را باز کنید و با ایمیل یا GitHub ثبت‌نام کنید. تأیید ایمیل لازم است.</p></div>
+            </li>
+            <li>
+              <span class="step-num" data-i18n="trialN3">۳</span>
+              <div><b data-i18n="trialS3t">دوره خودکار شروع می‌شود</b><p data-i18n="trialS3d">۳۰ روز همهٔ امکانات Pro باز است؛ بدون کارت بانکی. بعد از پایان، اپ روی Free ادامه می‌دهد و می‌توانید Pro را ماهانه، سالانه یا یک‌بارهٔ مادام‌العمر بخرید.</p></div>
+            </li>
+          </ol>
+          <p class="trial-why" data-i18n="trialWhy">چرا هر نفر فقط یک‌بار؟ دورهٔ رایگان به هر حساب، ایمیل، هویت GitHub و دستگاه یک‌بار داده می‌شود تا هزینهٔ آن به همهٔ کاربران تحمیل نشود.</p>
         </div>
         <p class="plans-foot" data-i18n="plansFoot">پس از پایان دورهٔ Pro، اپ متوقف نمی‌شود؛ روی پلن Free ادامه می‌دهد. هر دورهٔ آزمایشی یک‌بار برای هر حساب، ایمیل، هویت GitHub و دستگاه داده می‌شود.</p>
       </div>
@@ -460,6 +494,18 @@
               </a>
               <a class="btn btn-secondary btn-lg" href="https://github.com/omidmasumi740-dev/sortiva/releases/latest" target="_blank" rel="noopener noreferrer" data-i18n="downloadReleases">صفحهٔ انتشارها</a>
             </div>
+            <p class="download-price"><span data-i18n="downloadPricePrefix">۳۰ روز Pro رایگان، سپس</span> <b dir="ltr" data-pro-price>$2.99</b> <span class="price-suffix" data-i18n="downloadPriceSuffix">در ماه</span> <span class="price-sep" aria-hidden="true">·</span> <a class="price-link" href="#plans" data-i18n="downloadPriceLink">پلن‌ها</a></p>
+            <div class="verify">
+              <p class="verify-title" data-i18n="verifyTitle">قبل از اجرا، فایل را بررسی کنید</p>
+              <div class="hash-row">
+                <code class="sha-code" dir="ltr" data-sha>4694d18d5f9eb218cc1dd782fbd2a9ddaf9831793d0298dde4a7faaa8747152d</code>
+                <button class="copy-btn" id="copySha" type="button" data-i18n="copySha">کپی هش</button>
+              </div>
+              <p class="verify-how" data-i18n="verifyHow">مقدار زیر را با PowerShell مقایسه کنید (در پوشهٔ دانلود):</p>
+              <code class="verify-cmd" dir="ltr">Get-FileHash .\Sortiva_Setup_V<span data-version-raw>4.11.3</span>.exe -Algorithm SHA256</code>
+              <p class="verify-msg" id="copyMsg" role="status" hidden></p>
+              <a class="verify-vt" id="vtLink" href="" target="_blank" rel="noopener noreferrer" hidden data-i18n="verifyVt">اسکن VirusTotal این نسخه</a>
+            </div>
             <div class="download-alt">
               <a href="https://github.com/omidmasumi740-dev/sortiva/blob/main/README.md" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5"/></svg>
@@ -478,10 +524,6 @@
                 <li><span data-i18n="reqVersion">نسخه</span><span data-version>4.11.3</span></li>
               </ul>
             </div>
-            <details class="sha">
-              <summary data-i18n="shaTitle">SHA-256 نصب‌کننده</summary>
-              <code class="sha-code" data-sha>4694d18d5f9eb218cc1dd782fbd2a9ddaf9831793d0298dde4a7faaa8747152d</code>
-            </details>
             <p class="side-note" data-i18n="downloadNote">Sortiva روی خود ویندوز اجرا می‌شود؛ فایل‌ها از دستگاه شما بیرون نمی‌روند.</p>
           </aside>
         </div>
@@ -519,6 +561,26 @@
             <summary data-i18n="q6">تقویم شمسی پشتیبانی می‌شود؟</summary>
             <p data-i18n="a6">بله. پوشه‌ها را می‌توانید بر اساس تاریخ شمسی یا میلادی بسازید و رابط فارسی به‌صورت کامل راست‌چین است.</p>
           </details>
+          <details class="faq-item">
+            <summary data-i18n="q7">حساب رایگان چه فایده‌ای دارد؟</summary>
+            <p data-i18n="a7">مرتب‌سازی، پیش‌نمایش، Auto Organize و Undo بدون حساب کار می‌کنند. حساب رایگان برای خروجی CSV/JSON، نگه‌داشتن لایسنس Pro و شروع دورهٔ ۳۰ روزه لازم است. ایمیل برای ورود و بازیابی رمز استفاده می‌شود و هویت GitHub فقط اگر خودتان با GitHub وارد شوید ذخیره می‌شود.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q8">فایل‌های من کجا ذخیره می‌شوند؟ چه کسی آن‌ها را می‌بیند؟</summary>
+            <p data-i18n="a8">Sortiva هیچ فایلی را آپلود نمی‌کند و پشتیبان ابری ندارد. فایل‌ها همان‌جا روی ویندوز خودتان می‌مانند. سرور فقط وضعیت حساب، دورهٔ آزمایشی و لایسنس را نگه می‌دارد تا بتوانید در صورت تعویض دستگاه لایسنس را برگردانید؛ کسی به محتوای فایل‌های شما دسترسی ندارد.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q9">چطور حساب و داده‌هایم را حذف کنم؟</summary>
+            <p><span data-i18n="a9a">کافی است به</span> <span dir="ltr">sortivasupport@gmail.com</span> <span data-i18n="a9b">ایمیل بزنید و حذف حساب را بخواهید. ایمیل حساب، هویت GitHub (اگر استفاده کرده‌اید) و شناسهٔ دستگاه از سرور حذف می‌شود؛ تنظیمات و تاریخچهٔ محلی روی خود رایانه می‌مانند تا خودتان پاک کنید.</span></p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q10">ویندوز هشدار SmartScreen می‌دهد؛ فایل امن است؟</summary>
+            <p data-i18n="a10">نصب‌کننده امضای دیجیتال تجاری ندارد، بنابراین SmartScreen ممکن است هشدار «ناشر ناشناس» بدهد. SHA-256 همین صفحه را با PowerShell مقایسه کنید؛ اگر یکی بود، فایل همان نسخهٔ رسمی است. برای اطمینان بیشتر، فایل را در VirusTotal هم اسکن کنید.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="q11">اگر پوشهٔ دادهٔ برنامه را پاک کنم چه می‌شود؟</summary>
+            <p data-i18n="a11">تنظیمات، تاریخچه و وضعیت ورود از بین می‌رود اما فایل‌های شما دست‌نخورده می‌مانند. با ورود دوباره به حساب، لایسنس Pro برمی‌گردد و دورهٔ آزمایشی دوباره داده نمی‌شود، چون به ایمیل، هویت GitHub و دستگاه گره خورده است.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -552,6 +614,8 @@
         <h3 data-i18n="footerLinks">لینک‌ها</h3>
         <a href="https://github.com/omidmasumi740-dev/sortiva" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="mailto:sortivasupport@gmail.com">sortivasupport@gmail.com</a>
+        <a href="privacy.html" data-i18n="footerPrivacy">حریم خصوصی</a>
+        <a href="contact.html" data-i18n="footerContact">تماس با ما</a>
         <a href="https://github.com/omidmasumi740-dev/sortiva/releases/latest" target="_blank" rel="noopener noreferrer" data-i18n="footerReleases">انتشارها</a>
         <a href="https://github.com/omidmasumi740-dev/sortiva/blob/main/README.md" target="_blank" rel="noopener noreferrer" data-i18n="footerNotes">راهنما و پلن‌ها</a>
         <a href="https://omidmasumi740-dev.github.io/sazora/" data-i18n="footerSazora">SAZORA</a>

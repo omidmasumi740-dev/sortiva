@@ -460,6 +460,31 @@ html[lang="en"] .lede {
   color: var(--muted-2);
 }
 
+.price-line {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.price-line .price-amount {
+  color: var(--ink);
+  font-size: 1.02rem;
+}
+
+.price-line a {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.price-sep {
+  color: var(--muted-2);
+}
+
 .hero-points {
   list-style: none;
   padding: 0;
@@ -1136,6 +1161,86 @@ html[dir="rtl"] .ba-arrow svg {
   color: var(--muted-2);
 }
 
+.plan-price {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--ink);
+}
+
+.plan-price b {
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.plan-price .price-suffix {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.trial-how {
+  margin-top: 26px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 26px 28px;
+  box-shadow: var(--shadow-sm);
+  scroll-margin-top: 84px;
+}
+
+.trial-how h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.trial-steps {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.trial-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--surface-2);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.trial-steps .step-num {
+  margin-bottom: 0;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  font-size: 0.9rem;
+}
+
+.trial-steps b {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.trial-steps p {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  line-height: 1.85;
+  color: var(--muted);
+}
+
+.trial-why {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  line-height: 1.9;
+  color: var(--muted-2);
+}
+
 /* Steps */
 .steps {
   list-style: none;
@@ -1294,6 +1399,103 @@ html[dir="rtl"] .ba-arrow svg {
   color: #8fa9c9;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 16px;
+}
+
+.download-price {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #b8cbe3;
+}
+
+.download-price b {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.download-price a {
+  color: #7cc4ff;
+  font-weight: 600;
+}
+
+.verify {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 18px;
+}
+
+.verify-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.hash-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hash-row .sha-code {
+  flex: 1 1 260px;
+  margin-top: 0;
+  font-size: 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.copy-btn {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.16s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.verify-how {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  color: #b8cbe3;
+}
+
+.verify-cmd {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.68rem;
+  color: #cfe2f7;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+  font-family: "Inter", monospace;
+}
+
+.verify-msg {
+  margin-top: 8px;
+  font-size: 0.76rem;
+  color: #8ff0c7;
+}
+
+.verify-vt {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7cc4ff;
 }
 
 .download-side {
@@ -1606,6 +1808,9 @@ html[lang="fa"] .footer-col h3 {
   .plan-grid {
     grid-template-columns: 1fr;
   }
+  .trial-steps {
+    grid-template-columns: 1fr;
+  }
   .steps {
     grid-template-columns: 1fr;
   }
@@ -1667,6 +1872,10 @@ html[lang="fa"] .footer-col h3 {
   .download-card {
     padding: 28px 22px;
     border-radius: 22px;
+  }
+  .trial-how {
+    padding: 22px 20px;
+    scroll-margin-top: 74px;
   }
   .download-actions .btn,
   .cta-row .btn {
@@ -2045,6 +2254,107 @@ html[lang="fa"] .footer-col h3 {
   .float-card { padding: 8px 11px; }
   .float-card small { display: none; }
   .quote-band { padding: 40px 0 44px; }
+}
+
+/* Subpages: privacy, contact, 404 */
+.page-head {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.page-head h1 {
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 12px;
+  text-wrap: balance;
+}
+
+.page-lead {
+  font-size: 1rem;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+.page-updated {
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: var(--muted-2);
+}
+
+.panel {
+  padding: 26px 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 14px;
+}
+
+.panel h2 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.panel p,
+.panel li {
+  font-size: 0.92rem;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+.panel code {
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.78rem;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.panel-note {
+  border-color: #f4d3bd;
+  background: #fff8f2;
+}
+
+.mail-inline {
+  color: var(--blue);
+  border-bottom: 1px solid rgba(47, 128, 237, 0.3);
+  word-break: break-all;
+}
+
+.mail-box {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+@media (max-width: 560px) {
+  .panel { padding: 20px 18px; }
+  .page-actions .btn { flex: 1 1 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -14,7 +14,8 @@
       downloadShort: 'دانلود',
       heroBadgePrefix: 'نسخهٔ',
       heroBadgeSuffix: 'منتشر شد',
-      heroTitle: 'فایل‌هایت را مرتب کن. <span class="grad">بی‌نظمی را فراموش کن.</span>',
+      heroTitleA: 'فایل‌هایت را مرتب کن.',
+      heroTitleB: 'بی‌نظمی را فراموش کن.',
       heroLede: 'Sortiva پوشه‌های ویندوز را بر اساس نوع و تاریخ مرتب می‌کند، تاریخ واقعی عکس و ویدیو را از خود فایل می‌خواند، قبل از هر جابه‌جایی پیش‌نمایش و هشدار می‌دهد و می‌تواند طبق برنامه و حتی با برنامهٔ بسته اجرا شود.',
       heroCta: 'دانلود نسخهٔ ویندوز',
       heroSecondary: 'دیدن قابلیت‌ها',
@@ -22,6 +23,9 @@
       heroPoint1: 'پلن رایگان بدون انقضا، بدون کارت بانکی',
       heroPoint2: 'پیش‌نمایش و هشدار قبل از جابه‌جایی فایل‌ها',
       heroPoint3: 'تاریخچهٔ کامل با بازگردانی و پوشهٔ شمسی',
+      heroPricePrefix: 'نسخهٔ رایگان همیشگی · ۳۰ روز Pro رایگان · سپس',
+      heroPriceSuffix: 'در ماه',
+      heroPriceLink: 'جزئیات پلن‌ها',
       windowHome: 'مرتب‌سازی',
       floatA: '۲۳ فایل → ۳ پوشه',
       floatASub: 'پیش‌نمایش قبل از اجرا',
@@ -92,7 +96,7 @@
       m2d: 'تاریخ عکس و پروژه به شمسی؛ پوشه‌های ۱۴۰۵-۰۸ بدون تبدیل دستی، یا میلادی اگر بخواهی.',
       m3t: 'حساب اختیاری',
       m3d: 'مرتب‌سازی و Undo بدون حساب؛ حساب رایگان فقط برای خروجی CSV/JSON و شروع ۳۰ روز Pro.',
-      plansKicker: 'شفاف، بدون قید پنهان',
+      plansKicker: 'قیمت شفاف',
       plansTitle: 'رایگان برای همیشه، Pro برای کارهای بیشتر',
       plansSub: 'مرتب‌سازی روزمره در پلن رایگان می‌ماند. قابلیت‌های حرفه‌ای را ۳۰ روز بدون کارت بانکی امتحان می‌کنید.',
       freeTitle: 'Free',
@@ -110,6 +114,7 @@
       proTitle: 'Pro',
       proBadge: '۳۰ روز رایگان',
       proSub: 'همهٔ امکانات Free، به‌علاوهٔ ابزارهای خودکارسازی و پاک‌سازی.',
+      proPriceSuffix: 'در ماه، بعد از ۳۰ روز رایگان',
       pro1: 'قوانین هوشمند و پریست‌های آماده',
       pro2: 'پیدا کردن فایل‌های تکراری',
       pro3: 'اجرای روزانه با Windows Task Scheduler، حتی وقتی اپ بسته است',
@@ -120,6 +125,17 @@
       proCta: 'شروع دورهٔ آزمایشی',
       planNote: 'برای فعال‌سازی دورهٔ آزمایشی و خروجی، یک حساب رایگان با ایمیل یا GitHub بسازید. کارت بانکی لازم نیست.',
       plansFoot: 'پس از پایان دورهٔ Pro، اپ متوقف نمی‌شود؛ روی پلن Free ادامه می‌دهد. هر دورهٔ آزمایشی یک‌بار برای هر حساب، ایمیل، هویت GitHub و دستگاه داده می‌شود.',
+      trialTitle: 'دورهٔ آزمایشی چطور کار می‌کند؟',
+      trialN1: '۱',
+      trialN2: '۲',
+      trialN3: '۳',
+      trialS1t: 'نصب کنید',
+      trialS1d: 'فایل Setup را اجرا کنید. پلن رایگان بدون حساب و بدون انقضا از همان لحظه کار می‌کند.',
+      trialS2t: 'حساب رایگان بسازید',
+      trialS2d: 'در اپ «Pro & account» را باز کنید و با ایمیل یا GitHub ثبت‌نام کنید. تأیید ایمیل لازم است.',
+      trialS3t: 'دوره خودکار شروع می‌شود',
+      trialS3d: '۳۰ روز همهٔ امکانات Pro باز است؛ بدون کارت بانکی. بعد از پایان، اپ روی Free ادامه می‌دهد و می‌توانید Pro را ماهانه، سالانه یا یک‌بارهٔ مادام‌العمر بخرید.',
+      trialWhy: 'چرا هر نفر فقط یک‌بار؟ دورهٔ رایگان به هر حساب، ایمیل، هویت GitHub و دستگاه یک‌بار داده می‌شود تا هزینهٔ آن به همهٔ کاربران تحمیل نشود.',
       howKicker: 'سه قدم ساده',
       howTitle: 'از نصب تا پوشهٔ مرتب',
       howSub: 'هیچ فایلی بدون دیدن پیش‌نمایش جابه‌جا نمی‌شود.',
@@ -141,8 +157,17 @@
       reqSize: 'حجم نصب‌کننده',
       reqLicense: 'مجوز',
       reqVersion: 'نسخه',
-      shaTitle: 'SHA-256 نصب‌کننده',
       downloadNote: 'Sortiva روی خود ویندوز اجرا می‌شود؛ فایل‌ها از دستگاه شما بیرون نمی‌روند.',
+      downloadPricePrefix: '۳۰ روز Pro رایگان، سپس',
+      downloadPriceSuffix: 'در ماه',
+      downloadPriceLink: 'پلن‌ها',
+      verifyTitle: 'قبل از اجرا، فایل را بررسی کنید',
+      copySha: 'کپی هش',
+      verifyHow: 'مقدار زیر را با PowerShell مقایسه کنید (در پوشهٔ دانلود):',
+      verifyVt: 'اسکن VirusTotal این نسخه',
+      copied: 'هش کپی شد',
+      copyFailed: 'کپی نشد؛ خودتان انتخاب و کپی کنید',
+      priceTba: 'قیمت Pro به‌زودی اعلام می‌شود',
       faqKicker: 'پرسش‌های رایج',
       faqTitle: 'قبل از مرتب‌کردن بدانید',
       q1: 'آیا Sortiva رایگان است؟',
@@ -157,6 +182,17 @@
       a5: 'در پلن Free، Auto Organize تا وقتی اپ باز است کار می‌کند. در Pro می‌توانید اجرای روزانه را به Windows Task Scheduler بسپارید تا حتی وقتی برنامه بسته است انجام شود.',
       q6: 'تقویم شمسی پشتیبانی می‌شود؟',
       a6: 'بله. پوشه‌ها را می‌توانید بر اساس تاریخ شمسی یا میلادی بسازید و رابط فارسی به‌صورت کامل راست‌چین است.',
+      q7: 'حساب رایگان چه فایده‌ای دارد؟',
+      a7: 'مرتب‌سازی، پیش‌نمایش، Auto Organize و Undo بدون حساب کار می‌کنند. حساب رایگان برای خروجی CSV/JSON، نگه‌داشتن لایسنس Pro و شروع دورهٔ ۳۰ روزه لازم است. ایمیل برای ورود و بازیابی رمز استفاده می‌شود و هویت GitHub فقط اگر خودتان با GitHub وارد شوید ذخیره می‌شود.',
+      q8: 'فایل‌های من کجا ذخیره می‌شوند؟ چه کسی آن‌ها را می‌بیند؟',
+      a8: 'Sortiva هیچ فایلی را آپلود نمی‌کند و پشتیبان ابری ندارد. فایل‌ها همان‌جا روی ویندوز خودتان می‌مانند. سرور فقط وضعیت حساب، دورهٔ آزمایشی و لایسنس را نگه می‌دارد تا بتوانید در صورت تعویض دستگاه لایسنس را برگردانید؛ کسی به محتوای فایل‌های شما دسترسی ندارد.',
+      q9: 'چطور حساب و داده‌هایم را حذف کنم؟',
+      a9a: 'کافی است به',
+      a9b: 'ایمیل بزنید و حذف حساب را بخواهید. ایمیل حساب، هویت GitHub (اگر استفاده کرده‌اید) و شناسهٔ دستگاه از سرور حذف می‌شود؛ تنظیمات و تاریخچهٔ محلی روی خود رایانه می‌مانند تا خودتان پاک کنید.',
+      q10: 'ویندوز هشدار SmartScreen می‌دهد؛ فایل امن است؟',
+      a10: 'نصب‌کننده امضای دیجیتال تجاری ندارد، بنابراین SmartScreen ممکن است هشدار «ناشر ناشناس» بدهد. SHA-256 همین صفحه را با PowerShell مقایسه کنید؛ اگر یکی بود، فایل همان نسخهٔ رسمی است. برای اطمینان بیشتر، فایل را در VirusTotal هم اسکن کنید.',
+      q11: 'اگر پوشهٔ دادهٔ برنامه را پاک کنم چه می‌شود؟',
+      a11: 'تنظیمات، تاریخچه و وضعیت ورود از بین می‌رود اما فایل‌های شما دست‌نخورده می‌مانند. با ورود دوباره به حساب، لایسنس Pro برمی‌گردد و دورهٔ آزمایشی دوباره داده نمی‌شود، چون به ایمیل، هویت GitHub و دستگاه گره خورده است.',
       crossKicker: 'از همین سازنده',
       crossTitle: 'SAZORA — پروژهٔ ساختمانی، کارگر و مالی',
       crossSub: 'مدیریت قرارداد، مراحل اجرا با تاریخ شمسی، کارکرد و مزد کارگر، صورت‌وضعیت متراژ و مالی — آفلاین روی ویندوز.',
@@ -167,6 +203,8 @@
       footerReleases: 'انتشارها',
       footerNotes: 'راهنما و پلن‌ها',
       footerSazora: 'SAZORA',
+      footerPrivacy: 'حریم خصوصی',
+      footerContact: 'تماس با ما',
       footerSupport: 'حمایت',
       footerDonate: 'صفحهٔ دونیت',
       footerAuthor: 'سایر پروژه‌ها',
@@ -187,7 +225,8 @@
       downloadShort: 'Download',
       heroBadgePrefix: 'Version',
       heroBadgeSuffix: 'is out',
-      heroTitle: 'Your files. <span class="grad">Perfectly organized.</span>',
+      heroTitleA: 'Your files.',
+      heroTitleB: 'Perfectly organized.',
       heroLede: 'Sortiva organizes Windows folders by type and date, reads the real capture date of photos and videos, shows a preview with warnings before anything moves, and can run on a schedule — even with the app closed.',
       heroCta: 'Download for Windows',
       heroSecondary: 'See features',
@@ -195,6 +234,9 @@
       heroPoint1: 'Free plan with no expiry, no credit card',
       heroPoint2: 'Preview and conflict warnings before anything moves',
       heroPoint3: 'Full history with Undo and Jalali folders',
+      heroPricePrefix: 'Free plan forever · 30 days of Pro free · then',
+      heroPriceSuffix: '/month',
+      heroPriceLink: 'See plans',
       windowHome: 'Organize',
       floatA: '23 files → 3 folders',
       floatASub: 'Preview before running',
@@ -265,7 +307,7 @@
       m2d: 'Photo and project dates in Jalali; 1405-08 folders with no manual conversion — or Gregorian if you prefer.',
       m3t: 'Optional account',
       m3d: 'Organizing and Undo work without an account; a free account is only for CSV/JSON export and the 30-day Pro trial.',
-      plansKicker: 'Clear, no hidden strings',
+      plansKicker: 'Simple pricing',
       plansTitle: 'Free forever, Pro for more',
       plansSub: 'Everyday organizing stays free. Try the pro tools for 30 days with no credit card.',
       freeTitle: 'Free',
@@ -283,6 +325,7 @@
       proTitle: 'Pro',
       proBadge: '30 days free',
       proSub: 'Everything in Free, plus automation and cleanup tools.',
+      proPriceSuffix: '/month after 30 days free',
       pro1: 'Smart rules and ready-made presets',
       pro2: 'Duplicate file finder',
       pro3: 'Daily runs with Windows Task Scheduler, even when the app is closed',
@@ -293,6 +336,17 @@
       proCta: 'Start free trial',
       planNote: 'Create a free account with email or GitHub to start the trial and export. No credit card required.',
       plansFoot: 'After the Pro trial ends, the app keeps working on Free. The trial is granted once per account, email, GitHub identity and machine.',
+      trialTitle: 'How the trial works',
+      trialN1: '1',
+      trialN2: '2',
+      trialN3: '3',
+      trialS1t: 'Install',
+      trialS1d: 'Run the Setup. The free plan works immediately, with no account and no expiry.',
+      trialS2t: 'Create a free account',
+      trialS2d: 'Open “Pro & account” in the app and sign up with email or GitHub. Email confirmation is required.',
+      trialS3t: 'The trial starts automatically',
+      trialS3d: '30 days of every Pro feature, no credit card. When it ends the app continues on Free, and you can buy Pro monthly, yearly or as a one-time lifetime plan.',
+      trialWhy: 'Why once per person? The free trial is granted once per account, email, GitHub identity and machine so its cost is not pushed onto every user.',
       howKicker: 'Three simple steps',
       howTitle: 'From install to organized',
       howSub: 'No file moves without a preview.',
@@ -314,8 +368,17 @@
       reqSize: 'Installer size',
       reqLicense: 'License',
       reqVersion: 'Version',
-      shaTitle: 'Installer SHA-256',
       downloadNote: 'Sortiva runs locally on Windows; your files never leave your machine.',
+      downloadPricePrefix: '30 days of Pro free, then',
+      downloadPriceSuffix: '/month',
+      downloadPriceLink: 'Plans',
+      verifyTitle: 'Verify the file before running it',
+      copySha: 'Copy hash',
+      verifyHow: 'Compare the value below in PowerShell (in your download folder):',
+      verifyVt: 'VirusTotal scan for this version',
+      copied: 'Hash copied',
+      copyFailed: 'Copy failed — select and copy it manually',
+      priceTba: 'Pro pricing will be announced soon',
       faqKicker: 'Common questions',
       faqTitle: 'Know before you organize',
       q1: 'Is Sortiva free?',
@@ -330,6 +393,17 @@
       a5: 'On Free, Auto Organize works while the app is open. On Pro you can schedule daily runs with Windows Task Scheduler so it works even when the app is closed.',
       q6: 'Is the Jalali calendar supported?',
       a6: 'Yes. You can build folders by Jalali or Gregorian dates, and the Persian interface is fully right-to-left.',
+      q7: 'What does a free account add?',
+      a7: 'Organizing, preview, Auto Organize and Undo work without an account. A free account is needed for CSV/JSON export, keeping your Pro license and starting the 30-day trial. Your email is used for sign-in and password recovery; a GitHub identity is stored only if you choose GitHub sign-in.',
+      q8: 'Where are my files stored? Who can see them?',
+      a8: 'Sortiva never uploads files and has no cloud backup. Your files stay on your own Windows machine. The server only keeps account, trial and license status so you can restore a license on another device; nobody can access the contents of your files.',
+      q9: 'How do I delete my account and data?',
+      a9a: 'Email',
+      a9b: 'and ask us to delete the account. The account email, GitHub identity (if used) and device identifier are removed from the server; local settings and history stay on your computer for you to clear.',
+      q10: 'Windows SmartScreen warns about the installer. Is it safe?',
+      a10: 'The installer has no commercial code-signing certificate, so SmartScreen may show an “unknown publisher” warning. Compare the SHA-256 on this page using PowerShell; if it matches, you have the official build. You can also scan the file on VirusTotal.',
+      q11: 'What happens if I delete the app data folder?',
+      a11: 'Settings, history and sign-in state are lost, but your files are untouched. Signing in again restores the Pro license, and the free trial is not granted twice because it is tied to your email, GitHub identity and machine.',
       crossKicker: 'From the same maker',
       crossTitle: 'SAZORA — construction projects, workers and finance',
       crossSub: 'Contracts, build stages with Jalali dates, worker attendance and wages, measured statements and finance — offline on Windows.',
@@ -340,6 +414,8 @@
       footerReleases: 'Releases',
       footerNotes: 'Guide & plans',
       footerSazora: 'SAZORA',
+      footerPrivacy: 'Privacy',
+      footerContact: 'Contact',
       footerSupport: 'Support',
       footerDonate: 'Donate page',
       footerAuthor: 'More projects',
@@ -405,6 +481,9 @@
     document.querySelectorAll('[data-size]').forEach(function (el) {
       el.textContent = formatSize(state.size);
     });
+    document.querySelectorAll('[data-version-raw]').forEach(function (el) {
+      el.textContent = state.version;
+    });
   }
 
   function downloadUrl() {
@@ -414,11 +493,36 @@
 
   function renderRelease() {
     renderNumbers();
+    renderPrice();
     document.querySelectorAll('[data-download="sortiva"]').forEach(function (el) {
       el.setAttribute('href', downloadUrl());
     });
     document.querySelectorAll('[data-sha]').forEach(function (el) {
       el.textContent = CFG.SHA256 || '';
+    });
+  }
+
+  function parsePrice(raw) {
+    var cleaned = String(raw || '').replace(/[^0-9.]/g, '');
+    var n = parseFloat(cleaned);
+    return isFinite(n) && n > 0 ? n : null;
+  }
+
+  function formatPrice(n) {
+    if (state.lang === 'fa') {
+      return toFa(n.toFixed(2)).replace('.', '٫') + ' دلار';
+    }
+    return '$' + n.toFixed(2);
+  }
+
+  function renderPrice() {
+    var t = dict[state.lang];
+    var n = parsePrice(CFG.PRO_PRICE);
+    document.querySelectorAll('[data-pro-price]').forEach(function (el) {
+      el.textContent = n === null ? t.priceTba : formatPrice(n);
+    });
+    document.querySelectorAll('.price-suffix, .price-sep, .price-link').forEach(function (el) {
+      el.hidden = n === null;
     });
   }
 
@@ -455,10 +559,6 @@
       var key = el.getAttribute('data-i18n');
       if (t[key] !== undefined) el.textContent = t[key];
     });
-    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n-html');
-      if (t[key] !== undefined) el.innerHTML = t[key];
-    });
 
     var toggle = document.getElementById('langToggle');
     if (toggle) toggle.setAttribute('aria-label', t.langLabel);
@@ -486,19 +586,59 @@
   function initLanguage() {
     var stored = 'fa';
     try { stored = localStorage.getItem('sortiva-lang') === 'en' ? 'en' : 'fa'; } catch (e) {}
+    var fromUrl = '';
+    try { fromUrl = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    if (fromUrl === 'en' || fromUrl === 'fa') stored = fromUrl;
     applyLanguage(stored);
 
     var toggle = document.getElementById('langToggle');
     if (toggle) {
       toggle.addEventListener('click', function () {
         applyLanguage(state.lang === 'fa' ? 'en' : 'fa');
+        try {
+          var url = new URL(location.href);
+          url.searchParams.set('lang', state.lang);
+          history.replaceState(null, '', url.pathname + '?lang=' + state.lang + url.hash);
+        } catch (e) {}
       });
+    }
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return Promise.reject(new Error('clipboard unavailable'));
+  }
+
+  function initVerify() {
+    var btn = document.getElementById('copySha');
+    var msg = document.getElementById('copyMsg');
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var t = dict[state.lang];
+        copyText(CFG.SHA256 || '').then(function () {
+          if (msg) { msg.textContent = t.copied; msg.hidden = false; }
+        }).catch(function () {
+          if (msg) { msg.textContent = t.copyFailed; msg.hidden = false; }
+        });
+      });
+    }
+    var vt = document.getElementById('vtLink');
+    if (vt) {
+      if (CFG.VIRUSTOTAL_URL) {
+        vt.setAttribute('href', CFG.VIRUSTOTAL_URL);
+        vt.hidden = false;
+      } else {
+        vt.remove();
+      }
     }
   }
 
   function init() {
     initLanguage();
     initHeader();
+    initVerify();
 
     var year = document.getElementById('year');
     if (year) year.textContent = String(new Date().getFullYear());

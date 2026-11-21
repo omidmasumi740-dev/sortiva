@@ -2,9 +2,16 @@ window.SITE_CONFIG = {
   CONTACT_EMAIL: 'sortivasupport@gmail.com',
   SUPABASE_URL: '',
   SUPABASE_ANON_KEY: '',
-  PRO_PRICE: '',
+  PRO_PRICE: '$2.99',
   IS_FREE: false,
-  GATED_FEATURES: [],
+  GATED_FEATURES: [
+    'smartRules',
+    'duplicateFinder',
+    'taskScheduler',
+    'folderWatch',
+    'installerCleanup',
+    'advancedAutoOrganize'
+  ],
   CLOUD_BACKUP_ENABLED: false,
   VERSION: '4.11.3',
   FILE_SIZE: 18131306,
