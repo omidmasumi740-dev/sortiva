@@ -8,7 +8,7 @@ Sortiva is a Windows desktop app that keeps your folders tidy. It sorts files by
 
 ## Download
 
-Get the latest installer from the [Releases](https://github.com/omidmasumi740-dev/sortiva/releases/latest) page and run it. Existing settings, history, the account session and an activated Pro license are kept across upgrades.
+Get the latest installer from the [Releases](https://github.com/omidmasumi740-dev/sortiva/releases/latest) page — or open the app website at https://omidmasumi740-dev.github.io/sortiva/ — and run it. Existing settings, history, the account session and an activated Pro license are kept across upgrades.
 
 After installing: open **Pro & account** → **Create account** (email or GitHub) → your 30-day Pro trial starts immediately.
 
@@ -43,4 +43,6 @@ MIT — see [LICENSE](https://github.com/omidmasumi740-dev/sortiva/blob/main/LIC
 
 ## Author
 
-Omid Masomi
+Omid Masomi — [sortivasupport@gmail.com](mailto:sortivasupport@gmail.com)
+
+Website: https://omidmasumi740-dev.github.io/sortiva/
