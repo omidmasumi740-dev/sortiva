@@ -190,6 +190,18 @@
       footerLicense: 'مجوز MIT',
       footerRights: 'همهٔ حقوق محفوظ است',
       footerMade: 'ساختهٔ Omid Masomi',
+      newKicker: 'تازه در نسخهٔ ۴٫۱۲٫۱',
+      newTitle: 'حساب در یک جا، نام شما خودکار',
+      newSub: 'ورود و حساب فقط از تنظیمات؛ نام شما هنگام ثبت‌نام ذخیره می‌شود و بعد از ورود خودکار خوانده می‌شود.',
+      new1t: 'حساب فقط در تنظیمات',
+      new1d: 'دکمه‌های اضافی ورود از صفحهٔ اصلی و درباره حذف شدند؛ ورود و پروفایل یک جای روشن دارد.',
+      new2t: 'نام هنگام ثبت‌نام',
+      new2d: 'هنگام ساخت حساب، نام و نام خانوادگی پرسیده و همراه حساب ذخیره می‌شود.',
+      new3t: 'نام خودکار بعد از ورود',
+      new3d: 'با ورود ایمیل یا GitHub، نام شما خوانده و داخل برنامه ذخیره می‌شود؛ صفحهٔ حساب آن را نشان می‌دهد.',
+      new4: 'حساب‌های قدیمی بدون نام، یک‌بار نام را می‌پرسند و آن را روی سرور و در برنامه ذخیره می‌کنند.',
+      new5: 'همه‌چیز هنوز کاملاً رایگان است — بدون لایسنس، بدون دورهٔ آزمایشی و بدون نیاز به حساب.',
+      newNotes: 'مشاهدهٔ انتشارها در GitHub',
       langLabel: 'Switch to English'
     },
     en: {
@@ -380,6 +392,18 @@
       footerLicense: 'MIT License',
       footerRights: 'All rights reserved',
       footerMade: 'Made by Omid Masomi',
+      newKicker: 'New in 4.12.1',
+      newTitle: 'Account in one place, your name saved for you',
+      newSub: 'Sign-in lives only in Settings; your name is saved at sign-up and read automatically after sign-in.',
+      new1t: 'Account only in Settings',
+      new1d: 'The extra sign-in buttons on Home and About are gone; sign-in and profile now have one clear place.',
+      new2t: 'Name at sign-up',
+      new2d: 'Creating an account asks for first and last name and saves both with the account.',
+      new3t: 'Name filled in after sign-in',
+      new3d: 'Signing in with email or GitHub reads your name and saves it inside the app; the account page shows it.',
+      new4: 'Older accounts without a name are asked once and store it on the server and in the app.',
+      new5: 'Everything is still completely free — no license, no trial and no account required.',
+      newNotes: 'See releases on GitHub',
       langLabel: 'تغییر به فارسی'
     }
   };

@@ -1053,6 +1053,13 @@ html[dir="rtl"] .ba-arrow svg {
   align-items: stretch;
 }
 
+.plan-grid-single {
+  grid-template-columns: minmax(0, 680px);
+  justify-content: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .plan-card {
   position: relative;
   background: #fff;
