@@ -2,20 +2,13 @@ window.SITE_CONFIG = {
   CONTACT_EMAIL: 'sortivasupport@gmail.com',
   SUPABASE_URL: '',
   SUPABASE_ANON_KEY: '',
-  PRO_PRICE: '$2.99',
-  IS_FREE: false,
-  GATED_FEATURES: [
-    'smartRules',
-    'duplicateFinder',
-    'taskScheduler',
-    'folderWatch',
-    'installerCleanup',
-    'advancedAutoOrganize'
-  ],
+  PRO_PRICE: '',
+  IS_FREE: true,
+  GATED_FEATURES: [],
   CLOUD_BACKUP_ENABLED: false,
-  VERSION: '4.11.3',
-  FILE_SIZE: 18131306,
-  SHA256: '4694d18d5f9eb218cc1dd782fbd2a9ddaf9831793d0298dde4a7faaa8747152d',
+  VERSION: '4.12.0',
+  FILE_SIZE: 18116631,
+  SHA256: 'e7f0f3c9a23a432142a1ff91bb4fbe7444b7d7a46c7bb4a7a27c64318e78049d',
   VIRUSTOTAL_URL: '',
   DOWNLOAD_URL: ''
 };
