@@ -411,8 +411,8 @@
   var REPO_URL = 'https://github.com/omidmasumi740-dev/sortiva';
   var state = {
     lang: 'fa',
-    version: CFG.VERSION || '4.12.0',
-    size: Number(CFG.FILE_SIZE) || 18116631
+    version: CFG.VERSION || '4.12.1',
+    size: Number(CFG.FILE_SIZE) || 18121768
   };
 
   function toFa(value) {
