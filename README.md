@@ -1,4 +1,4 @@
-# Sortiva 4.12.0 — [omidmasumi740-dev.github.io/sortiva](https://omidmasumi740-dev.github.io/sortiva/)
+# Sortiva 4.12.1 — [omidmasumi740-dev.github.io/sortiva](https://omidmasumi740-dev.github.io/sortiva/)
 
 Windows desktop file organizer. *Your Files. Perfectly Organized.* — by Omid Masomi. English is the default language; Persian is available as the secondary language.
 
@@ -58,7 +58,7 @@ Sortiva is a complete organizer with every feature unlocked — there is no lice
 ## 🚀 Download & Install
 
 1. Go to the [Releases](../../releases) page or open the app website — https://omidmasumi740-dev.github.io/sortiva/
-2. Download `Sortiva_Setup_V4.12.0.exe`
+2. Download `Sortiva_Setup_V4.12.1.exe`
 3. Run the installer — it installs to `Program Files` (per-user where permitted), creates a Start Menu shortcut and an optional Desktop shortcut
 4. Open Sortiva and start organizing — nothing else is needed
 
@@ -94,7 +94,7 @@ Manual steps:
 
 ```bat
 pyinstaller --noconfirm --clean --onedir --windowed --icon icon.ico --manifest longpath.manifest --name Sortiva --add-data "icon.png;." --add-data "icon.ico;." --add-data "ocr_win.ps1;." --add-data "assets;assets" file_organizer.py
-"%ProgramFiles(x86)%\Inno Setup 7\ISCC.exe" /DMyAppVersion=4.12.0 installer.iss
+"%ProgramFiles(x86)%\Inno Setup 7\ISCC.exe" /DMyAppVersion=4.12.1 installer.iss
 python release.py package
 ```
 
@@ -144,6 +144,7 @@ publish_release.bat # publish the built installer to GitHub Releases
 sign.bat            # Authenticode-sign the exe and setup
 longpath.manifest   # exe manifest: long-path aware + per-monitor DPI
 .github/workflows/release-cleanup.yml  # latest-only release hygiene
+RELEASE_NOTES_V4.12.1.md
 RELEASE_NOTES_V4.12.0.md
 RELEASE_NOTES_V4.11.3.md
 RELEASE_NOTES_V4.11.2.md
@@ -240,6 +241,12 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /
 MIT — see [LICENSE](LICENSE).
 
 ## Version History
+
+### 4.12.1
+- **One account entry** — the account page is reachable only from **Settings**; the extra sign-in buttons on Home and in About are removed
+- **First and last name** — creating an account asks for the name, and after signing in with email or GitHub the app reads it from the account and saves it automatically; the account page shows it
+- **Older accounts** — accounts without a saved name can complete it once from the account page; it is stored on the server and in the app
+- Everything stays completely free — no license, no trial, no account required
 
 ### 4.12.0
 - **Sortiva is completely free** — every feature is unlocked: rules, duplicates, scheduling, folder watch, cleanup, history export and all auto-organize modes. No license, no trial, no account required
