@@ -110,7 +110,7 @@
         responseLabel: 'زمان پاسخ',
         responseBody: 'معمولاً تا ۲ روز کاری.',
         issuesLabel: 'برای گزارش خطا',
-        issuesBody: 'نسخهٔ برنامه (مثلاً ۴٫۱۲٫۰)، نسخهٔ ویندوز و مسیر پوشه‌ای که مرتب می‌کردید را بنویسید. اگر پیام خطایی دیدید، متن آن را هم بفرستید.',
+        issuesBody: 'نسخهٔ برنامه (مثلاً ۴٫۱۲٫۱)، نسخهٔ ویندوز و مسیر پوشه‌ای که مرتب می‌کردید را بنویسید. اگر پیام خطایی دیدید، متن آن را هم بفرستید.',
         accountLabel: 'حساب اختیاری',
         accountBody: 'اگر ورود به حساب اختیاری درست کار نکرد، ایمیل حساب و نسخهٔ برنامه را بنویسید؛ رمز عبور را هرگز در ایمیل نفرستید.',
         home: 'بازگشت به صفحهٔ اصلی'
@@ -124,7 +124,7 @@
         responseLabel: 'Response time',
         responseBody: 'Usually within 2 business days.',
         issuesLabel: 'Reporting a bug',
-        issuesBody: 'Include the app version (for example 4.12.0), your Windows version and the folder you were sorting. If you saw an error message, paste its text too.',
+        issuesBody: 'Include the app version (for example 4.12.1), your Windows version and the folder you were sorting. If you saw an error message, paste its text too.',
         accountLabel: 'Optional account',
         accountBody: 'If optional account sign-in isn’t working, include the account email and app version; never send your password by email.',
         home: 'Back to home'
@@ -187,7 +187,7 @@
       });
     }
 
-    var version = CFG.VERSION || '4.12.0';
+    var version = CFG.VERSION || '4.12.1';
     var download = CFG.DOWNLOAD_URL || REPO_URL + '/releases/download/v' + version + '/Sortiva_Setup_V' + version + '.exe';
     document.querySelectorAll('[data-download="sortiva"]').forEach(function (el) {
       el.setAttribute('href', download);
