@@ -1,0 +1,3 @@
+# Keeps the GitHub-Pages-style absolute asset paths used by 404.html working on a root domain.
+/sortiva/ / 200
+/sortiva/* /:splat 200
