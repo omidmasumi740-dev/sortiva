@@ -8,7 +8,7 @@
     fa: {
       skip: 'پرش به محتوا',
       navFeatures: 'قابلیت‌ها',
-      navPlans: 'رایگان و Pro',
+      navPlans: 'رایگان',
       navHow: 'چطور کار می‌کند',
       navDownload: 'دانلود',
       navFaq: 'سوالات',
@@ -18,7 +18,7 @@
       footerNote: 'ساخته‌شده برای ویندوز ۱۰ و ۱۱ · مجوز MIT',
       footerLinks: 'لینک‌ها',
       footerReleases: 'انتشارها',
-      footerNotes: 'راهنما و پلن‌ها',
+      footerNotes: 'راهنما',
       footerPrivacy: 'حریم خصوصی',
       footerContact: 'تماس با ما',
       footerSazora: 'SAZORA',
@@ -33,7 +33,7 @@
     en: {
       skip: 'Skip to content',
       navFeatures: 'Features',
-      navPlans: 'Free & Pro',
+      navPlans: 'Free',
       navHow: 'How it works',
       navDownload: 'Download',
       navFaq: 'FAQ',
@@ -43,7 +43,7 @@
       footerNote: 'Built for Windows 10 and 11 · MIT license',
       footerLinks: 'Links',
       footerReleases: 'Releases',
-      footerNotes: 'Guide & plans',
+      footerNotes: 'Guide',
       footerPrivacy: 'Privacy',
       footerContact: 'Contact us',
       footerSazora: 'SAZORA',
@@ -67,14 +67,14 @@
         updated: 'آخرین به‌روزرسانی: آبان ۱۴۰۵',
         s1t: 'مرتب‌سازی روی دستگاه شما',
         s1b: 'فایل‌ها و پوشه‌ها روی همان ویندوز شما خوانده و جابه‌جا می‌شوند. Sortiva فایل‌ها، عکس‌ها یا ویدیوها را به سرور خودش آپلود نمی‌کند و محتوای آن‌ها را نمی‌خواند؛ فقط نام، نوع، تاریخ و در صورت نیاز فرادادهٔ عکس (EXIF) را برای مرتب‌سازی می‌خواند.',
-        s2t: 'حساب، دورهٔ آزمایشی و پرداخت',
-        s2b: 'برای دورهٔ آزمایشی Pro و خرید، یک حساب رایگان با ایمیل یا GitHub لازم است. ایمیل حساب برای ورود، بازیابی رمز و ثبت اینکه دورهٔ آزمایشی هر شخص یک‌بار استفاده شود روی سرور نگه‌داری می‌شود. اطلاعات پرداخت را فروشندهٔ پرداخت پردازش می‌کند و Sortiva شمارهٔ کارت را نمی‌بیند و ذخیره نمی‌کند.',
+        s2t: 'حساب اختیاری',
+        s2b: 'استفاده از Sortiva هیچ حساب یا پرداختی لازم ندارد. اگر خودتان بخواهید حساب بسازید، ایمیل حساب برای ورود و بازیابی رمز روی سرور نگه‌داری می‌شود و همهٔ قابلیت‌های برنامه بدون حساب هم باز است.',
         s3t: 'اینترنت چه زمانی استفاده می‌شود؟',
-        s3b: 'فقط برای بررسی به‌روزرسانی، ورود به حساب و خرید Pro. اگر از حساب استفاده نکنید، مرتب‌سازی کاملاً آفلاین کار می‌کند.',
+        s3b: 'فقط برای بررسی به‌روزرسانی و ورود اختیاری به حساب. اگر از حساب استفاده نکنید، مرتب‌سازی کاملاً آفلاین کار می‌کند.',
         s4t: 'این وب‌سایت',
         s4b: 'سایت Sortiva هیچ تبلیغ، ردیاب یا ابزار تحلیلی شخص ثالث ندارد. فونت و تصاویر از همان دامنه بارگذاری می‌شوند. فرم آنلاین نداریم؛ ارتباط از طریق ایمیل است.',
         s5t: 'حذف حساب و داده',
-        s5b1: 'برای حذف حساب و اطلاعات مرتبط با دورهٔ آزمایشی، از همان ایمیل حساب به',
+        s5b1: 'برای حذف حساب اختیاری، از همان ایمیل حساب به',
         s5b2: 'پیام بدهید. فایل‌های شما روی دستگاهتان هستند و حذف حساب به آن‌ها کاری ندارد.',
         s6t: 'تغییرات این سیاست',
         s6b: 'اگر این سیاست تغییر کند، همین صفحه به‌روزرسانی می‌شود و تاریخ بالای صفحه عوض می‌شود.'
@@ -87,14 +87,14 @@
         updated: 'Last updated: November 2026',
         s1t: 'Sorting happens on your device',
         s1b: 'Files and folders are read and moved on your own Windows machine. Sortiva does not upload your files, photos or videos to its servers and does not read their contents; it only reads names, types, dates and, where needed, photo metadata (EXIF) to sort them.',
-        s2t: 'Account, trial and payment',
-        s2b: 'A free account with email or GitHub is needed for the Pro trial and for buying Pro. The account email is kept on the server for sign-in, password recovery and recording that each person’s trial is used once. Payment details are processed by the payment provider; Sortiva never sees or stores your card number.',
+        s2t: 'Optional account',
+        s2b: 'Using Sortiva needs no account and no payment. If you choose to create an account, its email is kept on the server for sign-in and password recovery, and every app feature works without one.',
         s3t: 'When is the internet used?',
-        s3b: 'Only for update checks, account sign-in and buying Pro. If you don’t use an account, sorting works fully offline.',
+        s3b: 'Only for update checks and optional account sign-in. If you don’t use an account, sorting works fully offline.',
         s4t: 'This website',
         s4b: 'The Sortiva site has no ads, trackers or third-party analytics. Fonts and images load from the same domain. There is no online form; contact happens by email.',
         s5t: 'Deleting accounts and data',
-        s5b1: 'To delete your account and trial-related information, email',
+        s5b1: 'To delete your optional account, email',
         s5b2: 'from the account’s address. Your files stay on your device and are not affected by deleting the account.',
         s6t: 'Changes to this policy',
         s6b: 'If this policy changes, this page is updated and the date at the top changes.'
@@ -110,9 +110,9 @@
         responseLabel: 'زمان پاسخ',
         responseBody: 'معمولاً تا ۲ روز کاری.',
         issuesLabel: 'برای گزارش خطا',
-        issuesBody: 'نسخهٔ برنامه (مثلاً ۴٫۱۱٫۳)، نسخهٔ ویندوز و مسیر پوشه‌ای که مرتب می‌کردید را بنویسید. اگر پیام خطایی دیدید، متن آن را هم بفرستید.',
-        accountLabel: 'حساب و دورهٔ آزمایشی',
-        accountBody: 'اگر ورود یا دورهٔ آزمایشی درست کار نکرد، ایمیل حساب و نسخهٔ برنامه را بنویسید؛ رمز عبور را هرگز در ایمیل نفرستید.',
+        issuesBody: 'نسخهٔ برنامه (مثلاً ۴٫۱۲٫۰)، نسخهٔ ویندوز و مسیر پوشه‌ای که مرتب می‌کردید را بنویسید. اگر پیام خطایی دیدید، متن آن را هم بفرستید.',
+        accountLabel: 'حساب اختیاری',
+        accountBody: 'اگر ورود به حساب اختیاری درست کار نکرد، ایمیل حساب و نسخهٔ برنامه را بنویسید؛ رمز عبور را هرگز در ایمیل نفرستید.',
         home: 'بازگشت به صفحهٔ اصلی'
       },
       en: {
@@ -124,9 +124,9 @@
         responseLabel: 'Response time',
         responseBody: 'Usually within 2 business days.',
         issuesLabel: 'Reporting a bug',
-        issuesBody: 'Include the app version (for example 4.11.3), your Windows version and the folder you were sorting. If you saw an error message, paste its text too.',
-        accountLabel: 'Account and trial',
-        accountBody: 'If signing in or the trial isn’t working, include the account email and app version; never send your password by email.',
+        issuesBody: 'Include the app version (for example 4.12.0), your Windows version and the folder you were sorting. If you saw an error message, paste its text too.',
+        accountLabel: 'Optional account',
+        accountBody: 'If optional account sign-in isn’t working, include the account email and app version; never send your password by email.',
         home: 'Back to home'
       }
     },
@@ -187,7 +187,7 @@
       });
     }
 
-    var version = CFG.VERSION || '4.11.3';
+    var version = CFG.VERSION || '4.12.0';
     var download = CFG.DOWNLOAD_URL || REPO_URL + '/releases/download/v' + version + '/Sortiva_Setup_V' + version + '.exe';
     document.querySelectorAll('[data-download="sortiva"]').forEach(function (el) {
       el.setAttribute('href', download);
