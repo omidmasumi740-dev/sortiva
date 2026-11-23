@@ -190,7 +190,7 @@
       footerLicense: 'مجوز MIT',
       footerRights: 'همهٔ حقوق محفوظ است',
       footerMade: 'ساختهٔ Omid Masomi',
-      newKicker: 'تازه در نسخهٔ ۴٫۱۲٫۱',
+      newKicker: 'تازه در نسخهٔ ۴٫۱۲٫۲',
       newTitle: 'حساب در یک جا، نام شما خودکار',
       newSub: 'ورود و حساب فقط از تنظیمات؛ نام شما هنگام ثبت‌نام ذخیره می‌شود و بعد از ورود خودکار خوانده می‌شود.',
       new1t: 'حساب فقط در تنظیمات',
@@ -392,7 +392,7 @@
       footerLicense: 'MIT License',
       footerRights: 'All rights reserved',
       footerMade: 'Made by Omid Masomi',
-      newKicker: 'New in 4.12.1',
+      newKicker: 'New in 4.12.2',
       newTitle: 'Account in one place, your name saved for you',
       newSub: 'Sign-in lives only in Settings; your name is saved at sign-up and read automatically after sign-in.',
       new1t: 'Account only in Settings',
@@ -435,8 +435,8 @@
   var REPO_URL = 'https://github.com/omidmasumi740-dev/sortiva';
   var state = {
     lang: 'fa',
-    version: CFG.VERSION || '4.12.1',
-    size: Number(CFG.FILE_SIZE) || 18121768
+    version: CFG.VERSION || '4.12.2',
+    size: Number(CFG.FILE_SIZE) || 18116858
   };
 
   function toFa(value) {
