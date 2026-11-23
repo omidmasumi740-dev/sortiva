@@ -1,4 +1,4 @@
-# Sortiva 4.12.1 — [omidmasumi740-dev.github.io/sortiva](https://omidmasumi740-dev.github.io/sortiva/)
+# Sortiva 4.12.2 — [omidmasumi740-dev.github.io/sortiva](https://omidmasumi740-dev.github.io/sortiva/)
 
 Windows desktop file organizer. *Your Files. Perfectly Organized.* — by Omid Masomi. English is the default language; Persian is available as the secondary language.
 
@@ -34,7 +34,7 @@ Windows desktop file organizer. *Your Files. Perfectly Organized.* — by Omid M
 - ⚙️ Configurable file-count threshold (default 20) in Settings and on the Rules page
 - 🌐 Full Persian (Tahoma) and English (Segoe UI) interface, larger fonts for readability
 - 🖱️ Every page opens **inside the main window** — no popups, no separate windows
-- 🔗 **About** page with the app info and links plus the **Help** guide underneath: version, Website / GitHub / Email / Telegram / Instagram / Donate
+- 🔗 **About** page with the app info and links plus the **Help** guide underneath: version, Website / GitHub / Email / Telegram / Donate
 - ⬆️ Update check against GitHub Releases
 - 🔒 Single instance — launching the app again only raises the existing window
 - ⏱️ Optional run at Windows startup (background mode, auto-organizes the selected folders)
@@ -58,7 +58,7 @@ Sortiva is a complete organizer with every feature unlocked — there is no lice
 ## 🚀 Download & Install
 
 1. Go to the [Releases](../../releases) page or open the app website — https://omidmasumi740-dev.github.io/sortiva/
-2. Download `Sortiva_Setup_V4.12.1.exe`
+2. Download `Sortiva_Setup_V4.12.2.exe`
 3. Run the installer — it installs to `Program Files` (per-user where permitted), creates a Start Menu shortcut and an optional Desktop shortcut
 4. Open Sortiva and start organizing — nothing else is needed
 
@@ -76,7 +76,7 @@ The installed application does not require a separate Python installation.
 8. **Duplicates** — scan the selected folders for identical files and recycle the extras
 9. **Cleanup** — scan for older duplicate installers and stale Temp files, review what is selected, then recycle
 10. **Settings** — theme, accent color, UI scale, file-count threshold, history limit, exclusions, long paths, language
-11. **About** — app info and the help guide, plus Website, GitHub, Email, Telegram, Instagram and Donate links
+11. **About** — app info and the help guide, plus Website, GitHub, Email, Telegram and Donate links
 
 > 💡 Simple mode: up to 20 files in the same date stay together; more than 20 are split into video/photo/document subfolders. Change the count on the **Rules** page or under **Settings → Split by type when a date has more than N files** (0 = never split).
 
@@ -94,7 +94,7 @@ Manual steps:
 
 ```bat
 pyinstaller --noconfirm --clean --onedir --windowed --icon icon.ico --manifest longpath.manifest --name Sortiva --add-data "icon.png;." --add-data "icon.ico;." --add-data "ocr_win.ps1;." --add-data "assets;assets" file_organizer.py
-"%ProgramFiles(x86)%\Inno Setup 7\ISCC.exe" /DMyAppVersion=4.12.1 installer.iss
+"%ProgramFiles(x86)%\Inno Setup 7\ISCC.exe" /DMyAppVersion=4.12.2 installer.iss
 python release.py package
 ```
 
@@ -144,6 +144,7 @@ publish_release.bat # publish the built installer to GitHub Releases
 sign.bat            # Authenticode-sign the exe and setup
 longpath.manifest   # exe manifest: long-path aware + per-monitor DPI
 .github/workflows/release-cleanup.yml  # latest-only release hygiene
+RELEASE_NOTES_V4.12.2.md
 RELEASE_NOTES_V4.12.1.md
 RELEASE_NOTES_V4.12.0.md
 RELEASE_NOTES_V4.11.3.md
@@ -228,7 +229,6 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /
 - GitHub: https://github.com/omidmasumi740-dev/sortiva
 - Email: sortivasupport@gmail.com
 - Telegram: https://t.me/omidlabs
-- Instagram: https://instagram.com/omidamdev
 - Donate: https://omidmasumi740-dev.github.io/donate-page/
 - Releases: https://github.com/omidmasumi740-dev/sortiva/releases
 
@@ -241,6 +241,10 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /
 MIT — see [LICENSE](LICENSE).
 
 ## Version History
+
+### 4.12.2
+- **Instagram link removed** — the About page contact card, the README and the design notes no longer include Instagram; the card lists Website, GitHub, Email, Telegram and Donate
+- Everything else is unchanged and completely free
 
 ### 4.12.1
 - **One account entry** — the account page is reachable only from **Settings**; the extra sign-in buttons on Home and in About are removed
@@ -440,9 +444,9 @@ MIT — see [LICENSE](LICENSE).
 ### 4.2.0
 - All pages (Settings, Automatic Management, History, About, Help) open inside the main app window — no popups or separate windows
 - Home page matches the reference design: hero panel, prominent Start Organizing button, folder illustration, Supported File Types card
-- About page shows GitHub, Email, Telegram, Instagram and Donate addresses, each with its own icon
+- About page shows GitHub, Email, Telegram and Donate addresses, each with its own icon
 - Cleaner sidebar (Home, History, Automatic Management, Settings, About) and a slim auto-organize status bar at the bottom
-- Updated URLs: GitHub @omidmasumi740-dev, Telegram @omidlabs, Instagram @omidamdev, Donate at github.com/omidmasumi740-dev/donate-page
+- Updated URLs: GitHub @omidmasumi740-dev, Telegram @omidlabs, Donate at github.com/omidmasumi740-dev/donate-page
 - Installer-only distribution; clean state (no personal data) in packaged builds
 
 ### 4.1.1
